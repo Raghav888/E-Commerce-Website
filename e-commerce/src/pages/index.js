@@ -1,10 +1,14 @@
-import { NavBar } from '@/components/NavBar'
-import { Inter } from 'next/font/google'
+import { NavBar } from "@/components/NavBar";
+import { ProductCard } from "@/components/ProductCard";
+import { Inter } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
- <NavBar/>
-  )
+    <div>
+      <NavBar />
+      <ProductCard />
+    </div>
+  );
 }

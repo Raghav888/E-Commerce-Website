@@ -1,0 +1,56 @@
+.mantra-discount {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.mantra-card-btn {
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.mantra-button {
+  padding: 5px;
+  background-color: gray;
+  border: none;
+  outline: none;
+}
+
+.mantra-vertical-card {
+  position: relative;
+  max-width: 45rem;
+  height: auto;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 1rem;
+  margin-right: 4rem;
+  margin-top: 4rem;
+}
+
+.mantra-card-holder-text-vert {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.mantra-card-holder-image-v {
+  flex: 1;
+}
+
+.mantra-vert-image {
+  border-radius: 1rem;
+  max-inline-size: 100%;
+  block-size: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardHolder {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 2rem 10rem;
+}
+
+.mantra-card-holder-text-content {
+  font-size: 4rem;
+}
