@@ -1,0 +1,32 @@
+.mantra-nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: gray;
+    padding: 1rem;
+}
+
+.mantra-nav-title {
+    margin-left: 1rem;
+}
+
+.mantra-title,
+.mantra-cart-button {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mantra-menu-icon {
+    text-decoration: none;
+    color: black;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-right: 1.5rem;
+}
+
+.mantra-nav-footer {
+    margin-left: auto;
+    margin-right:5px;
+}
