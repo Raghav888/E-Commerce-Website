@@ -6,17 +6,25 @@
   bottom: 0;
   left: 0;
   display: flex;
-  justify-content: space-between;
 }
 
-.head {
+.addressError {
   font-size: 3rem;
 }
 
 .address {
-  padding-top: 1rem;
-  font-size: 2.5rem;
+  flex: 2;
+  font-size: 3rem;
 }
 
-.addressTab {
+.temperature {
+  flex: 1;
+  text-align: right;
+  font-size: 2rem;
+}
+
+.addressHeader,
+.temperatureHeader {
+  font-weight: bold;
+  font-size: 2rem;
 }
