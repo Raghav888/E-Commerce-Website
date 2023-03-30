@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { NavBar } from "@/components/NavBar";
 import { ProductCard } from "@/components/ProductCard";
 import { Inter } from "next/font/google";
@@ -9,6 +10,7 @@ export default function Home() {
     <div>
       <NavBar />
       <ProductCard />
+      <Footer />
     </div>
   );
 }
