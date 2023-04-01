@@ -7,7 +7,6 @@ export const usePosition = () => {
     longitude: 0,
   };
   const [position, setPosition] = useState(defaultCoord);
-  const [error, setError] = useState(errorMessage);
 
   const onSuccess = ({ coords }) => {
     setPosition({

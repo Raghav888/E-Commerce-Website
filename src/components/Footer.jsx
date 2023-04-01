@@ -3,9 +3,9 @@ import { usePosition } from "../common/usePosition";
 import styles from "../styles/Footer.module.css";
 
 export const Footer = () => {
-  const {latitude, longitude} = usePosition();
+  const { latitude, longitude } = usePosition();
   const [temperature, setTemperature] = useState(0);
-  const [address, setAddress] = useState('');
+  const [address, setAddress] = useState("");
 
   const fetchWeather = async () => {
     try {
@@ -34,7 +34,7 @@ export const Footer = () => {
   };
 
   useEffect(() => {
-    if(latitude && longitude) {
+    if (latitude && longitude) {
       fetchWeather();
       fetchAddress();
     }
@@ -44,9 +44,7 @@ export const Footer = () => {
     <div className={styles.footer}>
       {!(latitude && longitude) ? (
         <>
-          <div className={styles.addressError}>
-            Geo Location not found
-          </div>
+          <div className={styles.addressError}>Geo Location not found</div>
         </>
       ) : (
         <>
