@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import styles from "../styles/ProductCard.module.css";
 import { usePosition } from "../common/usePosition";
+import Image from "next/image";
 
 export const ProductCard = () => {
   const [productList, setProduct] = useState([]);
@@ -96,11 +97,16 @@ export const ProductCard = () => {
           return (
             <div keys={id} className={styles["mantra-vertical-card"]}>
               <div className={styles["mantra-card-holder-image-v"]}>
-                <img className={styles["mantra-vert-image"]} src={imageURL} />
+                <Image
+                  src={imageURL} // Route of the image file
+                  height={300} // Desired size with correct aspect ratio
+                  width={300} // Desired size with correct aspect ratio
+                  alt="product img"
+                />
               </div>
               <div className={styles["mantra-card-holder-text-vert"]}>
                 <div className={styles["mantra-card-holder-text-content"]}>
-                  <h2>{productName}</h2>
+                  <h2 className={styles.name}>{productName}</h2>
                   <span className={styles["mantra-discount"]}>Rs.{price}</span>
                 </div>
               </div>

@@ -54,3 +54,10 @@
 .mantra-card-holder-text-content {
   font-size: 4rem;
 }
+
+.name {
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
